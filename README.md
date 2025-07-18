@@ -36,4 +36,5 @@ SPOTIPY_CLIENT_SECRET = '332xqp4ma6ml1Yt9dCJn5oRPZQBrBbPJ'
 ```
 12. Sauvegardez le fichier et quittez.
 13. Si nécessaire, attendez que le script d'installation se finit. (Vous devriez vérifier qu'il n'y ait pas d'invites qui vous proposent d'appuyer sur entrée pour continuer, en cas de doute, répondez simplement Y ou enter)
-14. Lancez spotify. Double-cliquez sur le fichier "telecharger-la-chanson.py" que vous venez de modifier pour l'ouvrir. Une fenêtre du terminal devrait s'ouvrir. Si vous voyez une fenêtre du bloc-note à la place, faites clic-droit et ouvrez avec "Python 3.13" ou "Python IDLE"
+14. Lancez spotify et jouez une musique. Double-cliquez sur le fichier "telecharger-la-chanson.py" que vous venez de modifier pour l'ouvrir. Une fenêtre du terminal devrait s'ouvrir. Si vous voyez une fenêtre du bloc-note à la place, faites clic-droit et ouvrez avec "Python 3.13" ou "Python IDLE".
+15. C'est fini! À chaque fois que vous voulez télécharger la musique en cours de lecture, lancez le script. Vous pouvez également supprimer le script d'installation.
