@@ -2,8 +2,6 @@
 SPOTIPY_CLIENT_ID = 'votre_id_client_spotify'
 SPOTIPY_CLIENT_SECRET = 'votre_secret_client_spotify'
 
-# Modèle de sortie pour yt-dlp. Voir la documentation de yt-dlp pour plus d'options : https://github.com/yt-dlp/yt-dlp#output-template
-output_template = f"{title} - {artist}.%(ext)s"
 #vous n'avez pas besoin de toucher au script, mais si vous êtes curieux, tout est commenté pour que vous sachiez exactement ce que chaque chose fait.
 
 # Importer les bibliothèques nécessaires
@@ -122,7 +120,9 @@ with tempfile.TemporaryDirectory() as temp_dir:
     except Exception as e:
         print(f"Échec du téléchargement de l'art de l'album : {e}")
         exit()
-
+    
+    # Modèle de sortie pour yt-dlp. Voir la documentation de yt-dlp pour plus d'options : https://github.com/yt-dlp/yt-dlp#output-template
+    output_template = f"{title} - {artist}.%(ext)s"
     # Utiliser yt-dlp pour rechercher sur YouTube et obtenir l'ID de la vidéo
     search_query = f"{artist} {title}"
     yt_dlp_search_cmd = [
